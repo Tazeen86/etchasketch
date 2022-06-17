@@ -1,27 +1,27 @@
 from turtle import Screen , Turtle
 
-tim= Turtle()
+turtle= Turtle()
 
 screen = Screen()
 
 screen.listen()
 
 def move_forwards():
-    tim.forward(10)
+    turtle.forward(10)
 
 def move_backwards():
-    tim.backward(10)
+    turtle.backward(10)
 
 def move_right():
-    tim.right(10)
+    turtle.right(10)
 def move_left():
-    tim.left(10)
+    turtle.left(10)
 
 def clear():
-    tim.clear()
-    tim.penup()
-    tim.home()
-    tim.pendown()
+    turtle.clear()
+    turtle.penup()
+    turtle.home()
+    turtle.pendown()
 
 screen.onkey(move_forwards,"w")
 screen.onkey(move_backwards,"s")
